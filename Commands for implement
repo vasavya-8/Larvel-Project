@@ -1,0 +1,25 @@
+I will Give  commands  For Task 1 Larvel Project:
+1️.PHP Installed
+Open CMD and type:
+php -v
+2️.Composer Installed
+Check:
+composer -v
+After this 2 steps we will go to :http://localhost/phpmyadmin
+Here We will create Database and import the database
+
+Task 2:HTML Template Calendar Page as Laravel Route
+1.Downloaded and extracted the HTML template
+Navigated to:
+html/vertical-menu-template/app-calendar.html
+2.Copied the app-calendar.html file into Laravel project:
+resources/views/calendar.blade.php
+Updated HTML:
+3.Converted static assets paths using Laravel asset() helper.
+Example:
+<link rel="stylesheet" href="{{ asset('assets/css/style.css') }}">
+4.Added route in:
+routes/web.php
+Route::get('/html-page', function () {
+    return view('calendar');
+});
